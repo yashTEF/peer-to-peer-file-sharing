@@ -1,12 +1,12 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra `pkg-config --cflags openssl`
-LDFLAGS = `pkg-config --libs openssl`
+CXXFLAGS = -std=c++17 -I./headers `pkg-config --cflags openssl`
+LDFLAGS = -lz `pkg-config --libs openssl`
 
 # Directories and source files
 SRC_DIR = src
 OBJ_DIR = obj
-BIN_DIR = bin
+BIN_DIR = .
 
 # Source and object files
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
