@@ -68,6 +68,7 @@
         "type_traits": "cpp",
         "algorithm": "cpp",
         "__tree": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "queue": "cpp"
     }
 }

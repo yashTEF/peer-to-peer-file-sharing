@@ -175,6 +175,17 @@ int main(int argc, char *argv[])
             add_files(files); // Add specified files
         }
     }
+    else if (command == "checkout")
+    {
+        if (argc != 3)
+        {
+            std::cerr << "Usage: ./mygit checkout <commit_sha>" << std::endl;
+            return 1;
+        }
+
+        std::string commit_sha = argv[2];
+        checkout(commit_sha);
+    }
     else
     {
         std::cerr << "Error: Unknown command '" << command << "'." << std::endl;

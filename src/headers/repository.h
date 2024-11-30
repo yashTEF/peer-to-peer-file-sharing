@@ -26,5 +26,6 @@ TreeEntry generate_tree_sha(const std::map<std::string, std::vector<std::string>
 TreeEntry write_tree();
 void log();
 void commit(std::string  message);
+void checkout(std::string commit_sha);
 
 #endif // REPOSITORY_H
